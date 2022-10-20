@@ -3,7 +3,7 @@ name: production workflow
 on:
   push:
     branches: ["master"]
-  merge:
+  pull-request:
     branches: ["master"]
 
 jobs:
