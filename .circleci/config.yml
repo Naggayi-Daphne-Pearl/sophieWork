@@ -9,8 +9,9 @@ workflows:
       - node/test
       - heroku/deploy-via-git:
           force: true # this parameter instructs the push to use a force flag when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
-          requires:
-            - node/test
+          # requires:
+          #   - node/test
           filters:
             branches:
-              only: master 
+              - master
+              - development
