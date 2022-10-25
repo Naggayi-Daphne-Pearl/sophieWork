@@ -6,6 +6,7 @@ nav{
  background-color: var(--primary-700);
  padding:1rem 2rem;
  color:var(--white);
+ min-width: 300px;
 }
 
 #nav-list{
