@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -14,15 +15,15 @@ const Navbar = () => {
       <div>
         <ul id="nav-list" className={state ? "#nav-list active" : "#nav-list"}>
           <li>
-            <a className="active" href="/#">
+            <Link className="active" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#">Dashboard</a>
+            <Link to="/dashboard">Dashboard</Link>
           </li>
           <li>
-            <a href="/#">Leaderboard</a>
+            <Link to="/leaderboard">Leaderboard</Link>
           </li>
         </ul>
       </div>

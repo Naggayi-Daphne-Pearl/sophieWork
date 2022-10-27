@@ -1,0 +1,55 @@
+.board {
+ text-align: center;
+}
+
+.board .leaderboard{
+ margin-bottom: 1em;
+}
+
+.board .duration{
+ display: flex;
+ justify-content: center;
+ gap: 1em;
+}
+
+.board .duration > button:hover{
+ background-color: var(--black);
+ color: var(--white);
+}
+
+.active{
+ background-color: var(--black);
+ color: var(--white);
+}
+
+#profile{
+ /* display: flex; */
+
+ margin-top: 3em;
+}
+
+#profile .flex{
+ display: flex;
+ justify-content: space-between;
+ gap: 1rem;
+ text-align: left;
+ margin-bottom: 2rem;
+}
+
+#profile .flex .item{
+ display: flex;
+ align-items: center;
+}
+
+#profile .flex img{
+ width: 20%;
+ border-radius: 50%;
+}
+
+#profile .flex .info{
+padding: 1em;
+}
+
+.text-dark{
+ color: var(--color-dark);
+}
