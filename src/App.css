@@ -132,6 +132,12 @@ ul {
 }
 /* buttons */
 
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button {
   cursor: pointer;
   color: var(--white);
