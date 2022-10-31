@@ -15,15 +15,15 @@ const Navbar = () => {
       <div>
         <ul id="nav-list" className={state ? "#nav-list active" : "#nav-list"}>
           <li>
-            <Link className="active" to="/">
+            <Link  style={{ textDecoration: "none" }}className="active" to="/">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link  style={{ textDecoration: "none" }} to="/dashboard">Dashboard</Link>
           </li>
           <li>
-            <Link to="/leaderboard">Leaderboard</Link>
+            <Link to="/leaderboard"  style={{ textDecoration: "none" }}>Leaderboard</Link>
           </li>
         </ul>
       </div>

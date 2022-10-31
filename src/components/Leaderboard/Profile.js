@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Table from "react-bootstrap/Table";
+import Table from 'react-bootstrap/Table';
 import leaderboardData from "./leaderboardData";
 
 const Profile = () => {
