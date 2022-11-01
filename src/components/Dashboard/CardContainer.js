@@ -15,7 +15,7 @@ const CardContainer = () => {
   // }, []);
   return (
     <>
-      <Navbar />
+     
       <Container>
         <Row style={rowStyle}><Data/></Row>
         <Row  style={rowStyle}><Stats/></Row>

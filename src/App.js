@@ -4,8 +4,9 @@ import { Routes, Route } from "react-router-dom";
 // components
 import CardContainer from "./components/Dashboard/CardContainer";
 import Leaderboard from "./components/Leaderboard/Leaderboard";
-import Home from "./components/Home/Home";
+import Home from "./components/Home/HomePage";
 import Footer from "./components/Footer/Footer"
+import Navbar from "./components/Nav/Navbar"
 
 
 // Bootstrap 
@@ -20,6 +21,7 @@ function App() {
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
         crossorigin="anonymous"
       />
+      <Navbar/>
       <Routes>
         <Route exact path="/leaderboard" element={<Leaderboard />} />
         <Route exact path="/" element={<Home />} />
