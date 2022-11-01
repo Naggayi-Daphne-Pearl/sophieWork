@@ -1,29 +1,36 @@
-import { useEffect, useState } from "react";
-import Navbar from "../Nav/Navbar.js";
-import Card from "./Card.js";
-import data from "./data";
+// import { useEffect, useState } from "react";
 
-const icons = [
-  { icon: '<i className="fa-solid fa-tooth"></i>' },
-  { icon: '<i className="fa-solid fa-tooth"></i>' },
-  { icon: '<i className="fa-solid fa-tooth"></i>' },
-  { icon: '<i className="fa-solid fa-tooth"></i>' },
-];
+// Components 
+import Navbar from "../Nav/Navbar.js";
+import Data from "./Data";
+import Stats from './Stats'
+import Percentage from './Percentage'
+import {Container, Row} from 'react-bootstrap'
+
+
 const CardContainer = () => {
-  const [item, setItem] = useState([]);
-  useEffect(() => {
-    setItem(data);
-  }, []);
+  // const [item, setItem] = useState([]);
+  // useEffect(() => {
+  //   setItem(data);
+  // }, []);
   return (
     <>
-    <Navbar/>
-      {item?.map((each) => (
-        <Card description={each.description} price={each.price}>
-          <p>some text</p>
-        </Card>
-      ))}
+      <Navbar />
+      <Container>
+        <Row style={rowStyle}><Data/></Row>
+        <Row  style={rowStyle}><Stats/></Row>
+        <Row  style={rowStyle}><Percentage/></Row>
+
+
+      </Container>
+     
+      
     </>
   );
 };
+
+const rowStyle ={
+  marginBottom:'2rem', 
+}
 
 export default CardContainer;
