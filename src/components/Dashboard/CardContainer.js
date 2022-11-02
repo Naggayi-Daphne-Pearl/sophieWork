@@ -19,7 +19,6 @@ const CardContainer = () => {
       <Container>
         <Row style={rowStyle}><Data/></Row>
         <Row  style={rowStyle}><Stats/></Row>
-        <Row  style={rowStyle}><Percentage/></Row>
 
 
       </Container>

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container, Row, Col,InputGroup, Form, Button } from 'react-bootstrap'
-import {FaSearch} from 'react-icons/fa'
+import { Container, Row, Col, InputGroup, Form, Button } from 'react-bootstrap'
+import { FaSearch } from 'react-icons/fa'
 
 
 const HomePage = () => {
@@ -14,18 +14,18 @@ const HomePage = () => {
 
         }}>
         <Col xs lg="6">
-          <p><b>Wikimedia</b> is a global <a href="https://meta.wikimedia.org/wiki/Special:MyLanguage/Wikimedia_movement">movement</a> whose mission is to bring free educational content to the world.</p>
-          <p>Through various projects, chapters, and the support structure of the non-profit Wikimedia Foundation, Wikimedia strives to bring about a world in which every single human being can freely share in the sum of all knowledge.</p>
+          <p><a href="https://toolhub.wikimedia.org/"><b>ToolHub</b></a> is a community managed catalog of software tools used in the Wikimedia movement </p>
+          <p>Discover new tools, promote their use in your wiki community, help improve them by contributing data.</p>
           <Row className="justify-content-md-center"
             style={{
-              margin: '3rem 0rem 2rem 2rem'
+              margin: '3rem 0rem 2rem 1rem'
             }}>
             <Col xs="6" lg="6"><Button variant="primary" style={primaryStyle}>I Got this!</Button></Col>
             <Col xs="6" lg="6"><Button variant="primary" style={secStyle}>Next Tool</Button></Col>
           </Row>
 
           <Row style={{
-            margin: '2rem 0rem 2rem 2rem'
+            margin: '2rem 0rem 2rem 1rem'
           }}>
             <Col xs="12" lg="11">
               <InputGroup className="mb-3">
@@ -40,7 +40,7 @@ const HomePage = () => {
                   variant="outline-secondary"
                   id="button-addon2"
                 >
-                  <FaSearch/>
+                  <FaSearch />
                 </Button>
               </InputGroup>
             </Col>
